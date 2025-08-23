@@ -11,7 +11,7 @@ const Todo = () => {
       id: Math.floor(Math.random() * 1000),
     };
     setTodo([...todo, newItem]);
-    setText(""); // Clear input after adding
+    setText(""); 
   };
 
   const complete = (id) => {

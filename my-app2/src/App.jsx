@@ -1,14 +1,16 @@
-import React from 'react'
-// import {Login, Logout} from "./component/Login"
-import Todo from './component/Todo/Todo';
-// import './App.css'
+// src/App.jsx
+import React from "react";
+// import Fetch from "./component/hooks/useEffect/fetch/fetch";
+import Prob1 from "./component/hooks/useEffect/prob1";
 
 function App() {
-return(<>
-{/* <h1>Hello</h1> */}
-<h1>Todo App</h1>
-<Todo/>
-</>);
+  return (
+    <div className="App">
+      {/* <Fetch /> */}
+      <Prob1 />
+       
+    </div>
+  );
 }
 
 export default App;
