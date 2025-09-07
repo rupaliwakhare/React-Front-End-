@@ -4,6 +4,7 @@
 // import Prob1 from "./component/hooks/useRef/Prob1"
 
 import Counter from "./component/props/Counter";
+import Navbar from "./component/Routing/Navbar";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
     //   <Navbar />
     // </ThemeProvider>
     // <Prob1/>
-    <Counter/>
+    <Navbar></Navbar>
   );
 }
 
