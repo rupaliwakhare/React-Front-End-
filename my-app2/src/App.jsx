@@ -1,15 +1,18 @@
 // src/App.jsx
-import React from "react";
-// import Fetch from "./component/hooks/useEffect/fetch/fetch";
-import Prob1 from "./component/hooks/useEffect/prob1";
+// import ThemeProvider from "./component/hooks/contextApi/theme/ThemeProvider";
+// import Navbar from "./component/hooks/contextApi/theme/Navbar";
+import Prob1 from "./component/hooks/useRef/Prob1"
 
 function App() {
   return (
-    <div className="App">
-      {/* <Fetch /> */}
-      <Prob1 />
-       
-    </div>
+    // <DataProvider>
+    //   <Home/>
+   
+    // </DataProvider>
+    // <ThemeProvider>
+    //   <Navbar />
+    // </ThemeProvider>
+    <Prob1/>
   );
 }
 
