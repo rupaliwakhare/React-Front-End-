@@ -1,7 +1,9 @@
 // src/App.jsx
 // import ThemeProvider from "./component/hooks/contextApi/theme/ThemeProvider";
 // import Navbar from "./component/hooks/contextApi/theme/Navbar";
-import Prob1 from "./component/hooks/useRef/Prob1"
+// import Prob1 from "./component/hooks/useRef/Prob1"
+
+import Counter from "./component/props/Counter";
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
     // <ThemeProvider>
     //   <Navbar />
     // </ThemeProvider>
-    <Prob1/>
+    // <Prob1/>
+    <Counter/>
   );
 }
 
