@@ -32,6 +32,10 @@ const Navbar = () => {
       }}>
 
         <h1>Cart:{cart.length}</h1>
+        <button onClick={toggleTheme}
+        style={{height:"50px",width:"200px", borderRadius:"15px"}}>
+            {theme==="light"?"Light theme":"Dark theme"}
+        </button>
        
       </div>
     </div>
