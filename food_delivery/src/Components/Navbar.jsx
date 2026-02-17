@@ -15,7 +15,8 @@ const Navbar = () => {
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
-        border: "2px solid",
+        border: "2px solid light-gray",
+        marginBottom:"10px"
       }}
     >
       <h2 style={{ color: "pink" }}>
