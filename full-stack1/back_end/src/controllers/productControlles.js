@@ -24,4 +24,11 @@ const createProduct = async (req, res) => {
   }
 };
 
-export default createProduct;
+const getProduct = async(req,res)=>{
+    const products = await productModel.find();
+    res.json(products)
+
+}
+
+
+export {createProduct,getProduct};
