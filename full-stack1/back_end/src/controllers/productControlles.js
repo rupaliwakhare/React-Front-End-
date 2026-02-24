@@ -52,7 +52,11 @@ const updateProduct = async (req, res) => {
   }
 };
 
+const deleteProduct = async(req,res)=>{
+  const updateProduct = await productModel.findByIdAndDelete(req.params.id);
+
+  res.json({message:"product delete", updateProduct});
+}
 
 
-
-export {createProduct,getProduct,updateProduct};
+export {createProduct,getProduct,updateProduct,deleteProduct};
