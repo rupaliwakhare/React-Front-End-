@@ -7,20 +7,24 @@ app.use(cors());
 app.use(express.json());
 
 const razorpay = new Razorpay({
-  key_secret: "D5lWFWh8ZTjnyNcB6QNo7T08",
   key_id: "rzp_test_SIjtYajYxGRq20",
+  key_secret: "D5lWFWh8ZTjnyNcB6QNo7T08",
 });
 
 // order api
 
 app.post("/create-order", async (req, res) => {
-  const options = {
-    amount: req.body.amount * 100,
-    currency: "INR",
-  };
+  try {
+    const options = {
+      amount: req.body.amount * 100,
+      currency: "INR",
+    };
 
-  const order = await razorpay.orders.create(options);
-  res.send(order);
+    const order = await razorpay.orders.create(options);
+    res.send(order);
+  } catch (error) {
+    res.status(500).json({error:"Failed to create order"});
+  }
 });
 
 // Razorpay uses paise
