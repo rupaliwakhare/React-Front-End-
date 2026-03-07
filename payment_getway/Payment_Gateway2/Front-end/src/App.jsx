@@ -3,7 +3,7 @@ import axios from "axios";
 import Navbar from "./pages/Navbar.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Products from "./pages/Products.jsx";
-// import Cart from "./pages/Cart.jsx";
+import Cart from "./pages/cart.jsx";
 
 const App = () => {
   const [cart, setCart] = useState([]); 
