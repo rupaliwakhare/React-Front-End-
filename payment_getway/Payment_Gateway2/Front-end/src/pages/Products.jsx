@@ -11,8 +11,8 @@ const Products = ({ cart, setCart }) => {
       .catch((err) => console.log(err));
   }, []);
 
-  const addToCart = (product) => {
-    setCart([...cart, product]);
+  const addToCart = (Products) => {
+    setCart([...cart, Products]);
   };
 
   return (

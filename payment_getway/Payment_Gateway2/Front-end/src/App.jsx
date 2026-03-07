@@ -6,7 +6,7 @@ import Products from "./pages/Products.jsx";
 // import Cart from "./pages/Cart.jsx";
 
 const App = () => {
-  const [cart, setCart] = useState([]); // cart state
+  const [cart, setCart] = useState([]); 
 
   return (
     <BrowserRouter>
@@ -15,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Products cart={cart} setCart={setCart} />} />
 
-        {/* <Route path="/cart" element={<Cart cart={cart} />} /> */}
+        <Route path="/cart" element={<Cart cart={cart} />} />
       </Routes>
     </BrowserRouter>
   );
